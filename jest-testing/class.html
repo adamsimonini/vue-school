@@ -1,0 +1,22 @@
+<h1>testing classes</h1>
+
+<script>
+    function Person(eyes, hair, height) {
+    this.eyes = eyes,
+    this.hair = hair,
+    this.height = height
+    this.eyeless = (function(){
+        return !eyes
+    })()
+    }
+
+    let Adam = new Person(2, true, 175)
+
+    console.log(Adam)
+    Adam.friendly = 'sometimes'
+    console.log(Adam)
+    console.log('Has hair: ' + Adam.hair)
+    console.log('Is a dog: ' + Adam.isDog);
+    console.log(Adam.eyeless);
+
+</script>
